@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Param;
+
+service ParamService {
+  rpc Do1 (ParamRequest) returns (ParamResponse) {}
+  rpc Do2 (ParamRequest) returns (ParamResponse) {}
+  rpc Do3 (ParamRequest) returns (ParamResponse) {}
+}
+
+message ParamRequest {
+  string message = 1;
+  string param1 = 2;
+  int32 param2 = 3;
+  bool param3 = 4;
+}
+
+message ParamResponse {
+  string message = 1;
+  string param1 = 2;
+  int32 param2 = 3;
+  bool param3 = 4;
+}
