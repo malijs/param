@@ -1,11 +1,10 @@
 # mali-param
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/malijs/param.svg)](https://greenkeeper.io/)
-
 Mali request param middleware
 
 [![npm version](https://img.shields.io/npm/v/mali-param.svg?style=flat-square)](https://www.npmjs.com/package/mali-param)
 [![build status](https://img.shields.io/travis/malijs/param/master.svg?style=flat-square)](https://travis-ci.org/malijs/param)
+[![Greenkeeper badge](https://badges.greenkeeper.io/malijs/param.svg)](https://greenkeeper.io/)
 
 ## API
 
@@ -26,7 +25,6 @@ Only applies for <code>UNARY</code> and <code>RESPONSE_STREAM</code> call types.
 | fn | <code>function</code> | The middleware function to execute |
 
 **Example**  
-
 ```js
 const param = require('mali-param')
 
@@ -37,7 +35,6 @@ async function appendDocType (id, ctx, next) {
 
 app.use(param('id', { type'string', truthy: true }, appendDocType))
 ```
-
 ## License
 
   Apache-2.0
