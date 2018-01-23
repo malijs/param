@@ -1,5 +1,7 @@
 # mali-param
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/malijs/param.svg)](https://greenkeeper.io/)
+
 Mali request param middleware
 
 [![npm version](https://img.shields.io/npm/v/mali-param.svg?style=flat-square)](https://www.npmjs.com/package/mali-param)
