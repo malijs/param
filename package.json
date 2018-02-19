@@ -38,7 +38,7 @@
     "jsdoc-to-markdown": "^4.0.1",
     "mali": "^0.7.0",
     "pify": "^3.0.0",
-    "standard": "^10.0.0"
+    "standard": "^11.0.0"
   },
   "ava": {
     "files": [
