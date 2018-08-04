@@ -45,6 +45,8 @@ module.exports = function (paramName, options, fn) {
         return next()
       }
       return fn(ctx.req[paramName], ctx, next)
+    } else {
+      return next()
     }
   }
 }

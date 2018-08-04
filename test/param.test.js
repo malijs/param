@@ -74,20 +74,12 @@ test('Should catch param 1', async t => {
   t.is(response.message, 'msg:param1=foo')
 })
 
-test('Should catch param 1 even when not provided', async t => {
-  t.plan(3)
-  const response = await client.do1({ message: 'msg' })
-  t.truthy(response)
-  t.truthy(response.message)
-  t.is(response.message, 'msg:param1=')
-})
-
-test('Should catch param 1 and param 2 when param 1 not specified', async t => {
+test('Should catch param 2 when param 1 not specified', async t => {
   t.plan(3)
   const response = await client.do1({ message: 'msg', param2: 10 })
   t.truthy(response)
   t.truthy(response.message)
-  t.is(response.message, 'msg:param1=:param2=10')
+  t.is(response.message, 'msg:param2=10')
 })
 
 test('Should catch param 1 and param 2', async t => {
@@ -98,12 +90,12 @@ test('Should catch param 1 and param 2', async t => {
   t.is(response.message, 'msg:param1=foo:param2=11')
 })
 
-test('Should catch param 3 and no param 2', async t => {
+test('Should catch param 1 and no param 2', async t => {
   t.plan(3)
   const response = await client.do2({ message: 'msg', param1: 'foo' })
   t.truthy(response)
   t.truthy(response.message)
-  t.is(response.message, 'msg:param1=foo:param3=false')
+  t.is(response.message, 'msg:param1=foo')
 })
 
 test('Should catch param 3', async t => {
