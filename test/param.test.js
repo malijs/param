@@ -111,7 +111,7 @@ test('Should catch param 3 mw 2', async t => {
   const response = await client.do3({ message: 'msg', param1: 'bar', param2: 13, param3: false })
   t.truthy(response)
   t.truthy(response.message)
-  t.is(response.message, 'msg:param1=bar:param2=13:param3=false:mali-param')
+  t.is(response.message, 'msg:param1=bar:param2=13:param3=false:@malijs/param')
 })
 
 test.after.always('guaranteed cleanup', t => {

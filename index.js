@@ -1,10 +1,10 @@
-const CallType = require('mali-call-types')
+const CallType = require('@malijs/call-types')
 
 /**
  * Mali param middleware. If the request object has the specified property
  * of specified type the middleware function is executed.
  * Only applies for <code>UNARY</code> and <code>RESPONSE_STREAM</code> call types.
- * @module mali-param
+ * @module @malijs/param
  *
  * @param  {String} paramName The name of the request object property
  * @param  {Options} options
@@ -15,7 +15,7 @@ const CallType = require('mali-call-types')
  * @param  {Function} fn The middleware function to execute
  *
  * @example
- * const param = require('mali-param')
+ * const param = require('@malijs/param')
  *
  * async function appendDocType (id, ctx, next) {
  *   ctx.req.id = 'user::'.concat(id)

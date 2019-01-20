@@ -1,16 +1,15 @@
-# mali-param
+# @malijs/param
 
 Mali request param middleware
 
-[![npm version](https://img.shields.io/npm/v/mali-param.svg?style=flat-square)](https://www.npmjs.com/package/mali-param)
+[![npm version](https://img.shields.io/npm/v/@malijs/param.svg?style=flat-square)](https://www.npmjs.com/package/@malijs/param)
 [![build status](https://img.shields.io/travis/malijs/param/master.svg?style=flat-square)](https://travis-ci.org/malijs/param)
-[![Greenkeeper badge](https://badges.greenkeeper.io/malijs/param.svg)](https://greenkeeper.io/)
 
 ## API
 
-<a name="module_mali-param"></a>
+<a name="module_@malijs/param"></a>
 
-### mali-param
+### @malijs/param
 Mali param middleware. If the request object has the specified property
 of specified type the middleware function is executed.
 Only applies for <code>UNARY</code> and <code>RESPONSE_STREAM</code> call types.
@@ -26,7 +25,7 @@ Only applies for <code>UNARY</code> and <code>RESPONSE_STREAM</code> call types.
 
 **Example**  
 ```js
-const param = require('mali-param')
+const param = require('@malijs/param')
 
 async function appendDocType (id, ctx, next) {
   ctx.req.id = 'user::'.concat(id)
