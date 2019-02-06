@@ -45,5 +45,8 @@
     "files": [
       "test/*.test.js"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
